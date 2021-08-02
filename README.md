@@ -1,6 +1,6 @@
 # Controle de Local de Trabalho
 
-Gerenciamento de espaços de trabalho dado prédio e sua posição interna. Projeto destinado time de desenvolvimento de softwares e Recursos Humanos da Empresa Obuc Gestão de Dados.
+Gerenciamento de espaços de trabalho dado prédio e sua posição interna. Projeto destinado ao time de desenvolvimento de softwares e Recursos Humanos da Empresa Obuc Gestão de Dados.
 
 ## Authors
 
