@@ -34,6 +34,29 @@
     text-align: center;
     font-size: 16;
   }
+
+  .userProfile {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 8px;
+  }
+
+  .user {
+    margin-left: 10px !important;
+  }
+  .header {
+    font-size: 12px !important;
+    text-align: left;
+  }
+
+  .transparent {
+    background: linear-gradient(
+      90deg,
+      rgba(241, 239, 239, 0) 0%,
+      rgb(31, 89, 130) 0%,
+      rgba(255, 255, 255, 0.618) 100%
+    ) !important;
+  }
 }
 
 body {
@@ -90,8 +113,9 @@ body {
   font-size: 10px;
 }
 .leftSide {
+  margin-top: -5px;
   width: 250px;
-  height: 88%;
+  height: 89%;
   position: absolute;
   background: rgb(78, 183, 245);
   background: linear-gradient(
@@ -213,4 +237,37 @@ td {
 #home:hover {
   color: rgb(78, 183, 245);
   cursor: pointer;
+}
+
+.terminal {
+  width: 90%;
+  height: 80%;
+  background: rgb(255, 255, 255);
+}
+
+.log {
+  color: rgb(99, 99, 99);
+  margin-left: 10px;
+  margin-right: 10px;
+
+  font-family: monospace;
+}
+
+img {
+  width: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.git {
+  background: rgb(242 242 242);
+  width: 97%;
+}
+
+.card {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }

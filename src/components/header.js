@@ -15,7 +15,7 @@ function Header() {
             <div className="userProfile">
               {" "}
               <HomeOutlinedIcon fontSize="medium" id="home" />{" "}
-              <PermIdentityOutlinedIcon fontSize="medium" id="home" />{" "}
+              <PermIdentityOutlinedIcon fontSize="medium" id="home" />{" "}{" "}
               <div className="user">
                 {" "}
                 <i>Usuário</i>

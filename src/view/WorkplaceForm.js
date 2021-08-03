@@ -1,30 +1,39 @@
 import React, { useState } from "react";
 import AddIcon from "@material-ui/icons/Add";
-
-
+import { useDispatch, useSelector } from "react-redux";
+import { addEvents } from "../redux/action/logAction";
 
 function WorkplaceForm(props) {
+  const stateAdd = useSelector((state) => state.LogReduceradd);
+  const dispatch = useDispatch();
   const [input, setInput] = useState("");
   const [select, setSelect] = useState("");
+  const [log, setLog] = useState("");
+  const [logs, setLogs] = useState(stateAdd);
 
   const handleChange = (e) => {
     setInput(e.target.value);
+    setLog(e.target.value);
   };
   const handleChangeSelect = (e) => {
     setSelect(e.target.value);
   };
 
   const handleSubmit = (e) => {
- 
     e.preventDefault();
+
+    setLogs([].concat(logs, log));
 
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
       building: select,
       localization: input,
     });
+
     setInput("");
   };
+
+  dispatch(addEvents(logs));
 
   return (
     <form onSubmit={handleSubmit}>
@@ -43,7 +52,6 @@ function WorkplaceForm(props) {
       <AddIcon onClick={handleSubmit} id="add"></AddIcon> <br></br>
       <div>
         <br></br>
-       
         <br></br>{" "}
       </div>
     </form>

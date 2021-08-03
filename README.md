@@ -9,7 +9,7 @@ Gerenciamento de espaços de trabalho dado prédio e sua posição interna. Proj
   
 ## Demo
 
-https://controlelocaisdetrabalhocastrojulliano.vercel.app
+https://obuc.vercel.app/
 
   
 ## License

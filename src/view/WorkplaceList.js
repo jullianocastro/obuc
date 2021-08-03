@@ -6,6 +6,7 @@ import { globalArrLocalTrabalho } from "../redux/action/workplaceAction";
 
 function WorkplaceList({ onClick }) {
  
+
   const dispatch = useDispatch();
 
   const arrGlobalLocalTrabalho = useSelector((state) => state.WorkplaceReducer);
