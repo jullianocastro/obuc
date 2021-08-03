@@ -3,11 +3,7 @@ export default  function LogDelReducer(state = [], action) {
   
     switch (action.type) {
       case "DEL":
-      if(AP[0].length === 0){
-        return;
-      } 
-
-      return AP[0]
+        return AP[0] 
   
       default:
         return state;

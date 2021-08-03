@@ -25,6 +25,8 @@ function WorkplaceList({ onClick }) {
   const addWorkplace = (Workplace) => {
     if (!Workplace.localization || /^\s*$/.test(Workplace.localization)) {
       return;
+
+    
     }
 
     const newarrLocaisTrabalho = [Workplace, ...arrLocaisTrabalho];

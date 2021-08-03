@@ -21,18 +21,21 @@ function Responsible() {
     });
 
   return (
-    <div className="git" >
-      
-      <div className="card"> 
-      <div>Request github </div>
-      Login: <div className="userID" />
-      <br></br>
-      Data da Conta: <div className="date" /> <br></br>
-      Repositório Público: <div className="repo" />
-      <div><br></br>
-        <img src= "https://avatars.githubusercontent.com/u/28925180?v=4" alt="Avatar" />
-      </div></div>
-  
+    <div className="git">
+      <div className="card">
+        <div>Request github </div>
+        Login: <div className="userID" />
+        <br></br>
+        Data da Conta: <div className="date" /> <br></br>
+        Repositório Público: <div className="repo" />
+        <div>
+          <br></br>
+          <img
+            src="https://avatars.githubusercontent.com/u/28925180?v=4"
+            alt="Avatar"
+          />
+        </div>
+      </div>
     </div>
   );
 }

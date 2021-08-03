@@ -2,7 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "../styles/css/index.css";
 
+import { STORAGE_KEY } from "../components/storage";
+
 function Log() {
+  const user = localStorage.getItem(STORAGE_KEY);
   const current = new Date();
   const date = `${current.getDate()}/${
     current.getMonth() + 1
@@ -23,14 +26,13 @@ function Log() {
         {eventAdd.map((log) => (
           <div className="log" key={log}>
             {" "}
-            #Adicionado por: @Administrador Evento: {log} Data: {date} às {time}{" "}
+            #Adicionado por:{user} Evento: {log} Data: {date} às {time}{" "}
           </div>
         ))}
         {eventDel.map((logrm) => (
           <div className="log" key={logrm}>
             {" "}
-            #Removido por: @Administrador Evento com ID: {logrm} Data: {date} às{" "}
-            {time}{" "}
+            #Removido por: {user} Evento com ID: {logrm} Data: {date} às {time}{" "}
           </div>
         ))}
       </div>

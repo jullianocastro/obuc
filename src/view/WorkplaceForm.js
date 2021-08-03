@@ -20,6 +20,9 @@ function WorkplaceForm(props) {
   };
 
   const handleSubmit = (e) => {
+    if (select.length === 0) {
+      return;
+    }
     e.preventDefault();
 
     setLogs([].concat(logs, log));
