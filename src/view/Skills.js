@@ -5,7 +5,7 @@ function Skills() {
   return (
     <>
       <h1>Skills</h1>
-      <img className="flux" src = {Flux} ></img>
+      <img className="flux" src = {Flux} alt="Flux" ></img>
     </>
   );
 }
