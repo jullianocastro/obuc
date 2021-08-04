@@ -34,6 +34,15 @@ class Firebase {
     return this.auth.currentUser.updateProfile({});
   }
 
+  forgot(email){
+    return this.auth.sendPasswordResetEmail(email).then(function(){
+
+     
+    }).catch(function (e){
+      console.log(e)
+    })
+  }
+
   isInitialized() {
     return new Promise((email) => {
       app.auth().onAuthStateChanged((email) => {

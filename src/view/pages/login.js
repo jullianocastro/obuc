@@ -16,7 +16,6 @@ makeStyles((theme) => ({
 }));
 
 export default function Login() {
-  console.log(process.env.REACT_APP_FIREBASE_AUTH_ID_KEY)
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -40,6 +39,8 @@ export default function Login() {
     e.preventDefault();
     login();
   }
+
+
 
   return (
     <div className="login">
@@ -69,14 +70,25 @@ export default function Login() {
               <br></br>
               <button type="submit"> Login </button>
               <br></br>
-              <button
-                color="primary"
-                onClick={() => {
-                  window.location.href = "/register";
-                }}
-              >
-                Cadastrar
-              </button>
+              <div className="util">
+                <button
+                  id="btn1"
+                  onClick={() => {
+                    window.location.href = "/register";
+                  }}
+                >
+                  Cadastrar
+                </button>
+
+                <button
+                  id="btn1"
+                  onClick={() => {
+                    window.location.href = "/forgot";
+                  }}
+                >
+                  Recuperar Senha
+                </button>
+              </div>
               <div className="e"></div>
               <div className="sucesso"></div>
             </div>
